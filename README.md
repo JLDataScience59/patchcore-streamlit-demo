@@ -4,6 +4,12 @@ Cette application Streamlit permet de détecter automatiquement des anomalies vi
 
 ---
 
+## Lien vers l'application
+
+<a href="https://patchcore-app-demo-6chnpfpspezhmarj9o8hjt.streamlit.app/">defectAI<\a>
+
+---
+
 ## Fonctionnalités
 
 - Présentation du modèle et de la méthode PatchCore
