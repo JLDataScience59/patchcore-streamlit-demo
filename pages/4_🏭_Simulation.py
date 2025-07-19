@@ -85,8 +85,7 @@ with tab1:
     )
 
 with tab2:
-    st.markdown(
-    """
+    st.markdown("""
     ### 1.Estimation dynamique du coût des erreurs   
     🔹 Paramètres d’entrée  
 
@@ -99,7 +98,7 @@ with tab2:
 
     - Nombre de pièces défectueuses : Ndefect = N × Pdefect  
     - Faux négatifs (FN) : FN = Ndefect × (1−recall)  
-    - Faux positifs (FP) : FP = (TP/precision) − TP où TP = Ndefect × recallFP   
+    - Faux positifs (FP) : FP = (TP/precision) − TP où TP = Ndefect × recall  
 
     🔹 Coût métier total  
     
@@ -109,43 +108,41 @@ with tab2:
         Coût total = FN × CFN + FP × CFP   
 
     ### 2.Exemple chiffré 
-    | Paramètre      | Valeur                                 |
-    |--------------------|---------------------------------------------|
-    | Nombre total (N)  | 80 000 pièces |
-    | Proportion défectueux  | 8% |
-    | Recall du modèle  | 0.94 |  
-    | Précision du modèle  | 0.78 |  
-    | Coût par FN  | 15€ |  
-    | Coût par FP  | 3€ |   
+    | Paramètre              | Valeur         |
+    |------------------------|----------------|
+    | Nombre total (N)       | 80 000 pièces  |
+    | Proportion défectueux  | 8 %            |
+    | Recall du modèle       | **0.989**      |  
+    | Précision du modèle    | **0.929**      |  
+    | Coût par FN            | 15 €           |  
+    | Coût par FP            | 3 €            |  
 
-    Calcul :
-    - Ndefect = 6 400
-    - FN = 6 400 × (1 − 0.94) = 384
-    - TP = 6 016
-    - FP = 6 016 / 0.78 − 6 016=1 697
-    💰 Coût total = 384×15 + 1 697×3 = 5 760 + 5 091 = 10 851 €
+    **Calcul :**
+    - N_defect = 80 000 × 8 % = 6 400  
+    - FN = 6 400 × (1 − 0.989) = 70.4  
+    - TP = 6 400 − 70.4 = 6 329.6  
+    - FP = (6 329.6 / 0.929) − 6 329.6 ≈ 483.1  
+    💰 **Coût total =** 70.4 × 15 + 483.1 × 3 = **1 056 € + 1 449 € = 2 505 €**
 
-    🔻 Économie annuelle estimée :
-    49 500€ − 10 851€ = 38 649 € économisés
+    🔻 **Économie annuelle estimée :**
+    49 500 € − 2 505 € = **46 995 € économisés**
   
     ### 3.Visualisation des résultats  
     Les graphiques suivants illustrent visuellement l’impact économique du modèle proposé :  
-    
     """)
-    col1, col2 = st.columns(2)
 
+    col1, col2 = st.columns(2)
     with col1:
         st.image("static/final_report1.png", use_container_width=True, caption="Figure 1 – Comparaison des coûts annuels (avec vs sans modèle)")
-   
     with col2:
         st.image("static/final_report2.png", use_container_width=True, caption="Figure 2 – Matrice de confusion pondérée")
 
     st.markdown("""
     ### 4.Commentaires métiers 
 
-    Avec un modèle performant (recall > 90%), TechForm Industries pourrait **réduire de plus de 80%** le coût annuel lié aux défauts non détectés. Même avec un volume non négligeable de faux positifs, **le gain global est significatif**, et justifie l’intégration d’un système de détection automatisé.            
-    """
-    )
+    Avec un modèle performant (recall proche de 99%), TechForm Industries pourrait **réduire de plus de 94 %** le coût annuel lié aux défauts non détectés.  
+    Même avec un volume modéré de faux positifs, **le gain global est significatif** et justifie pleinement l’intégration du système de détection automatisée.            
+    """)
 
 st.markdown("""
 ---

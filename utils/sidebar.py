@@ -12,7 +12,7 @@ def render_sidebar():
         st.page_link('pages/3_🧠_Modelization.py', label='Modélisation', icon='🧠')
         st.page_link('pages/4_🏭_Simulation.py', label='Simulation métier', icon='🏭')
         st.markdown("---")
-        
+
         st.image(str(static_dir / "datascientest_logo.png"), width=100)
         st.markdown("**[DataScientest](https://datascientest.com/)**")
         st.markdown("Projet DS - Promotion Bootcamp Mai 2025") 
@@ -29,6 +29,6 @@ def render_sidebar():
         st.markdown("**Alexandre MATHIEU [Linkedin](https://www.linkedin.com/in/alexandre-g-mathieu/)**")
 
         st.image(str(static_dir / "roberto.png"), width=100)
-        st.markdown("**Roberto Vercellin [Linkedin](https://www.linkedin.com/in/roberto-vercellin-3b4a18108/)**")
+        st.markdown("**Roberto VERCELLIN[Linkedin](https://www.linkedin.com/in/roberto-vercellin-3b4a18108/)**")
 
 

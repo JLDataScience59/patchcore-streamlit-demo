@@ -419,7 +419,7 @@ with tab2:
         axs[0, 1].axis("off")
 
         axs[1, 0].imshow(heat_map, cmap='jet')
-        axs[1, 0].set_title(f"Carte de chaleur anomalie\n(score: {anomaly_score:.2f})")
+        axs[1, 0].set_title(f"Heatmap anomalie\n(score: {anomaly_score:.2f})")
         axs[1, 0].axis("off")
 
         seuils = [best_threshold, best_threshold * 1.2, best_threshold * 1.5]
