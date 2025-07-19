@@ -6,7 +6,6 @@ __pycache__/
 *.pkl
 
 # Streamlit
-.streamlit/
 *.streamlit-*
 
 # Environnement virtuel
