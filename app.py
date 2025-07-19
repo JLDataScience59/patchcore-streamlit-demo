@@ -16,13 +16,12 @@ st.markdown("""
     <strong>⚠️ Version allégée de l'application :</strong><br>
     Cette démo utilise uniquement la catégorie <code>cable</code> du dataset <strong>MVTec AD</strong>, en raison de la limite de stockage de <strong>Streamlit Community Cloud</strong> (1 Go par app).<br>
     Pour exploiter l'ensemble du dataset avec toutes les catégories, téléchargez le code complet et exécutez-le localement.<br>       
-    Cette version de l'application est une première ébauche, tant au niveau du contenu scientifique (partie modélisation) que du contenu fonctionnel (partie simulation et ergonomire de l'application).<br>
 </div>
 """, unsafe_allow_html=True)
 
 st.markdown("""
 <div style='border-left: 6px solid #f39c12; padding: 0.5em; background-color: #fff3cd;'>
-    <strong>Cette application est une première ébauche réalisée dans le cadre de ma formation en data science.<br>
+    <strong>Cette application est une première ébauche, tant au niveau du contenu scientifique (partie modélisation) que du contenu fonctionnel (partie simulation et ergonomie de l'application), réalisée dans le cadre de ma formation en data science.<br>
     Elle a pour objectif de mettre en avant le travail effectué sur la détection d’anomalies industrielles,<br>
     en combinant modélisation, traitement d’images et déploiement d’une interface interactive.</strong><br><br>
 </div>
