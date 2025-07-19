@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+
+# Streamlit
+.streamlit/
+*.streamlit-*
+
+# Environnement virtuel
+env/
+venv/
+.venv/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# PyTorch
+*.pt
+*.pth
+
+# Cache/Temp
+*.log
+*.tmp
+
+# VSCode
+.vscode/
+
+# Streamlit Community Cloud logs
+logs/

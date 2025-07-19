@@ -2,8 +2,13 @@ import streamlit as st
 from utils.style import apply_custom_css
 from utils.sidebar import render_sidebar
 
+def main():
+    render_sidebar()
+
+if __name__ == '__main__':
+    main()
+
 apply_custom_css()
-render_sidebar()
 
 # CSS personnalisé pour élargir encore plus le contenu
 st.markdown("""

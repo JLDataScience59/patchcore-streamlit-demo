@@ -5,11 +5,16 @@ from utils.sidebar import render_sidebar
 from pathlib import Path
 import os
 
-apply_custom_css()
-render_sidebar()
+def main():
+    render_sidebar()
 
-st.title("Détection d'anomalies industrielles par PatchCore")
-#st.markdown("Bienvenue dans notre projet Streamlit ! Naviguez via le menu à gauche.")
+if __name__ == '__main__':
+    main()
+
+apply_custom_css()
+
+st.title("Détection d'anomalies industrielles")
+st.markdown("Bienvenue dans notre projet Streamlit ! Naviguez via le menu à gauche.")
 
 st.markdown("""
 <div style='border-left: 6px solid #f39c12; padding: 0.5em; background-color: #fff3cd;'>
