@@ -1,0 +1,14 @@
+.stApp .stSidebar {
+    background: linear-gradient(315deg, #00b0ea, #ffffff);
+    animation: gradient 15s ease infinite;
+}
+
+.stApp h1 {
+    color: #00b0ea
+}
+
+.main .block-container {
+    max-width: 95%;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
