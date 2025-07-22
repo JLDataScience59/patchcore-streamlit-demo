@@ -11,6 +11,8 @@ def render_sidebar():
         st.page_link('pages/2_📂_Dataset.py', label='Jeu de données', icon='📂')
         st.page_link('pages/3_🧠_Modelization.py', label='Modélisation', icon='🧠')
         st.page_link('pages/4_🏭_Simulation.py', label='Simulation métier', icon='🏭')
+        st.page_link('pages/5_✅_Conclusion.py', label='Conclusion', icon='✅')
+        st.page_link('pages/6_🙏_Remerciements.py', label='Remerciements', icon='🙏')
         st.markdown("---")
 
         st.image(str(static_dir / "datascientest_logo.png"), width=100)
