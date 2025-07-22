@@ -6,7 +6,7 @@ Cette application Streamlit permet de détecter automatiquement des anomalies vi
 
 ## Lien vers l'application
 
-<a href="https://anomaly-detection-patchcore/">defectAI</a>
+<a href="https://anomaly-detection-patchcore.streamlit.app/">defectAI</a>
 
 ---
 
